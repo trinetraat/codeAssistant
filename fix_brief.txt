@@ -1,0 +1,7 @@
+Handle both a single JSON file and a folder of many JSON files.
+- CLI: keep --schema and --outdir; support either --loan (single file) OR --loan-dir (folder of *.json). They are mutually exclusive.
+- If a file's root is a LIST, iterate items; if it's an OBJECT, process it directly.
+- Derive loanId by this order: loanId, loanID, loanIdNumber, id. If none, skip with a warning.
+- Append rows from all loans into ONE DataFrame per table; write ONE parquet per table at the end (pyarrow).
+- Keep UTC datetime coercion.
+Return a FULL single-file script.

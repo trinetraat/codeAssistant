@@ -1,0 +1,42 @@
+# Virtual environments
+venv/
+.venv/
+
+# Environment / secrets
+.env
+*.env
+
+# Local outputs / generated code
+/out/
+~/.codeassistant/outputs/
+/codeassistant_outputs/
+
+# Python cache & build artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+
+# Session / state files
+*.json
+*.log
+*.sqlite
+*.db
+
+# macOS system junk
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter notebooks (if any generated in future)
+.ipynb_checkpoints/

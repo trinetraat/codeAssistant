@@ -1,0 +1,1 @@
+Read schema.json and loan.json, normalize to tables, propagate loanId everywhere, and save each table as parquet (Fabric/Synapse compatible).
